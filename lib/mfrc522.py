@@ -5,7 +5,7 @@ import adafruit_bus_device.spi_device as spi_device
 
 
 class MFRC522:
-    DEBUG = True
+    DEBUG = False
     OK = 0
     NOTAGERR = 1
     ERR = 2
