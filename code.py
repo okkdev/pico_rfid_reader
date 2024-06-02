@@ -41,7 +41,6 @@ while True:
         (stat, raw_uid) = rfid.SelectTagSN()
 
         if status == rfid.OK:
-            print(raw_uid)
             rfid_data = "".join(["{:02x}".format(x) for x in raw_uid])
 
             if rfid_data != prev_data:
